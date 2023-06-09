@@ -1,0 +1,96 @@
+.main {
+    background-color: $color-grey;
+    height: auto;
+    &__wrapper {
+        display: flex;
+        justify-content:flex-end;
+        column-gap: 49px;
+        @include respond(big-1690) {
+            padding-left: 20px;
+        }
+        @include respond(tab-1180) {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: column-reverse;
+            padding-bottom: 71px;
+        }
+        @include respond(phone-min) {
+            padding-left: 10px;
+        }
+        &-img {
+            background-color: $color-grey;
+            padding-top: 45px;
+            text-align: end;
+            position: relative;
+            @include respond(tab-1180) {
+                padding-top: 30px;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                z-index: 20;
+                position: relative;
+            }
+        }
+    }
+    &__inner {
+        margin-top: 84px;
+        @include respond(big-1540) {
+            margin-top: 45px;
+        }
+        @include respond(phone-min) {
+            margin-top: 20px;
+        }
+        &-title {
+            width: 558px;
+            @include respond(tab-1240) {
+                width: auto;
+            }
+        }
+    }
+    &__internal {
+        margin-top: 24px;
+        @include respond(big-1458) {
+            margin-top: 10px;
+        }
+        &-line {
+            display: flex;
+            margin-bottom: 13px;
+            @include respond(big-1458) {
+                margin-bottom: 5px;
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            &_text {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                @include respond(big-1458) {
+                    margin-right: 10px;
+                }
+            }
+            &_img {
+                background-color: $color-orange;
+                border-radius: 50%;
+                min-width: 20px;
+                height: 20px;
+                position: relative;
+                margin-right: 10px;
+                @include respond(big-1458) {
+                    margin-right: 7px
+                }
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    
+}

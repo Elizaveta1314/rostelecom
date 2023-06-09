@@ -1,0 +1,164 @@
+.title__header {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black;
+    @include respond(tab-767) {
+        display: none;
+    }
+}
+.titel-h1 {
+    font-family: 'Rostelecom Basis Medium';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    @include respond(big-1458) {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    @include respond(phone-min) {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+.title-h2 {
+    font-family: 'Rostelecom Basis Medium';
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    @include respond(tab-767) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+.title-h3 {
+    font-family: 'Rostelecom Basis Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    @include respond(tab-767) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+.text-12px {
+    font-family: 'Rostelecom Basis Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #868B95;
+}
+.text-14px {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.title-16px {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-rgba;
+        @include respond(tab-767) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.text-16px {
+    font-family: 'Rostelecom Basis Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-black-two;
+    @include respond(tab-767) {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+.text-18px {
+    font-family: 'Rostelecom Basis Medium';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-black;
+}
+.title-18px {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    @include respond(big-1458) {
+        font-size: 16px;
+    }
+
+}
+.title-18px-14 {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    @include respond(big-1458) {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    @include respond(phone-350) {
+        font-size: 12px;
+    }
+}
+.text-h3-28px {
+    font-family: 'Rostelecom Basis Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.footer-text {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $color-rgba;
+    
+}
+.forms-text {
+    color: $color-rgba;
+    font-family: 'Rostelecom Basis Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    @include respond(tab-1180) {
+        margin-top: 12px;
+    }
+}
+.footer-text_link {
+    color: $color-black;
+}
+.nuber-bold {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    @include respond(tab-767) {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+.text-number {
+    font-family: 'Rostelecom Basis Medium';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 60px;
+    @include respond(tab-767) {
+        font-size: 28px;
+        line-height: 32px;
+        margin-top: 8px;
+    }
+
+}

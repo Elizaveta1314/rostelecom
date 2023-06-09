@@ -1,0 +1,76 @@
+.rates {
+    background-color: $color-light-grey;
+    padding: 144px 0 133px 0;
+    @include respond(tab-767) {
+        padding: 20px 0 0 0;
+    }
+    &__wrapper {
+        padding-top: 37px;
+        display: flex;
+        justify-content: flex-start;
+        column-gap: 20px;
+        @include respond(tab-1180) {
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+        @include respond(tab-767) {
+            padding: 20px 0 32px 0;
+        }
+    }
+    &__item {
+        background-color: $color-white;
+        width: 345px;
+        height: 390px;
+        padding: 24px 0 20px 0 ;
+        border: 2px solid #F3F3F4;
+        border-radius: 8px;
+        @include respond(tab-767) {
+            padding: 20px 0 36px 0;
+            min-width: 235px;
+            height: 361px;
+        }
+        @include respond(tab-767) {              
+            height: 400px;
+        }
+        &-line {
+            border-top: 1px solid #F3F3F4;
+            border-bottom: 1px solid #F3F3F4;
+            margin-top: 46px;
+            padding: 12px 0;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: 'Rostelecom Basis Regular';
+            @include respond(tab-767) {
+                font-size: 12px;
+                line-height: 20px;
+            }
+        }
+        &-number {
+            padding-top: 12px;
+            display: flex;
+            column-gap: 4px;
+            justify-content: end;
+            margin-right: 20px;
+            @include respond(tab-767) {
+                padding-top: 8px;
+            }
+        }
+        &-ryb {
+            font-family: 'Rostelecom Basis Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            &_line {
+                border-bottom: 1px solid $color-black;
+                padding-top: 3px;
+
+            }
+        }
+    }
+    &__indent {
+        margin-top: 16px;
+    }
+}

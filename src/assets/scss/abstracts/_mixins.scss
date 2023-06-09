@@ -1,0 +1,92 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone-350 {
+        @media (max-width: 350px) {
+            @content;
+        }
+    }
+    @if $breakpoint == phone-390 {
+        @media (max-width: 390px) {
+            @content;
+        }
+    }
+    @if $breakpoint == phone-min {
+        @media (max-width: 420px) {
+            @content;
+        }
+    }
+    @if $breakpoint == phone-507 {
+        @media (max-width: 507px) {
+            @content;
+        }
+    }
+    @if $breakpoint == phone-618 {
+        @media (max-width: 618px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-767 {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-993 {
+        @media (max-width: 993px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-1024 {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-1180 {
+        @media (max-width: 1180px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-1240 {
+        @media (max-width: 1240px) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-1368 {
+        @media (max-width: 1368px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-1458 {
+        @media (max-width: 1458px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-1540 {
+        @media (max-width: 1540px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-1690 {
+        @media (max-width: 1690px) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-screen {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}
+// @include respond(tab-land) {
+//     font-size: 56.25%;
+// }
+// @include respond(tab-laa) {
+//     font-size: 56.25%;
+// }
+// @include respond(tab-port) {
+//     font-size: 50%;
+// }
+// @include respond(phone) {
+//     font-size: 30%;
+// }
+// @include respond(big-screen) {
+//     font-size: 75%;
+// }

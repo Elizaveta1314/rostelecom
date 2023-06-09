@@ -1,0 +1,61 @@
+.additional {
+    background-color: $color-light-grey;
+    padding: 98px 0;
+    @include respond(tab-767) {
+        padding: 50px 0 57px 0;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 40px;
+        @include respond(tab-767) {
+            padding-top: 28px;
+            flex-wrap: nowrap;
+            justify-content: space-between; 
+        }
+    }
+    &__inner {
+        border: 2px solid $color-grey;
+        border-radius: 8px;
+        background-color: $color-white;
+        width: 467px;
+        height: 188px;
+        padding-left: 30px;
+        @include respond(big-1458) {
+            width: 47%;
+            padding-right: 10px;
+        }
+        @include respond(tab-767) {
+            min-width: 230px;
+            height: 284px;
+            padding-left: 0;
+            padding: 32px 20px 38px 20px;
+        }
+        &-top {
+            padding-top: 32px;
+            display: flex;
+            column-gap: 20px;
+            @include respond(tab-767) {
+                padding-top: 0px;
+                display: block;
+            }
+        }
+        &-text {
+            margin-left: 68px;
+            @include respond(tab-767) {
+                margin-left: 0px;
+            }
+        }
+    }
+    &__title {
+        @include respond(tab-767) {
+            white-space: nowrap;
+            width: 360px;
+        }
+    }
+}

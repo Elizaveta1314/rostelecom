@@ -1,0 +1,41 @@
+.margin-top-2 {
+    margin-top: 2px;
+    @include respond(tab-767) {
+        margin-top: 20px;
+    }
+}
+.margin-top-12 {
+    margin-top: 12px;
+}
+.margin-bottom-16 {
+    margin-bottom: 1.6px;
+}
+.margin-top-20 {
+    @include respond(tab-767) {
+        margin-top: 20px;
+    }
+}
+.margin-top-28 {
+    margin-top: 28px;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px;
+    @include respond(tab-1368) {
+        margin-bottom: 25px;
+    }
+}
+.margin-top-40 {
+    margin-top: 40px;
+    @include respond(tab-767) {
+        margin-top: 0;
+    } 
+}
+.rates-margin {
+    padding: 0 20px;
+}
+.rates-padding {
+    margin: 0 20px;
+    @include respond(tab-767) {              
+        margin: 10px 20px 0 20px;
+    }
+}

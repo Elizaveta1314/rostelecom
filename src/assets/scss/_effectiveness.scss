@@ -1,0 +1,41 @@
+.effectiveness {
+    padding: 80px 0;
+    background-color: $color-white;
+    @include respond(big-1458) {
+        padding: 40px 0;
+      }
+    &__wrap {
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @include respond(tab-1024) {
+          flex-wrap: wrap;  
+          justify-content: start;
+          row-gap: 28px;
+        }
+    }
+    &__inner {
+        width: 467px;
+        img {
+            width: 60px;
+            height: 60px;
+        }
+        @include respond(tab-1024) {
+            width: 30%;
+        } 
+        @include respond(tab-767) {
+            display: flex;
+            width: 100%;
+            img {
+                width: 47px;
+                height: 47px;
+            }
+        }  
+        &-mobile {
+            @include respond(tab-767) {
+                margin-left: 20px;
+            } 
+        }
+    }
+}

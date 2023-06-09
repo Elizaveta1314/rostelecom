@@ -1,0 +1,120 @@
+.btn__main {
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+    background-color: $color-orange;
+    border-radius: 100px;
+    padding: 14px 21px;
+    margin-top: 37px;
+    @include respond(big-1458) {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    @include respond(phone-min) {              
+        display: none;
+    }
+}
+.services-btn {
+    padding: 14px 44px;
+    font-family: 'Rostelecom Basis Regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 100px;
+    background-color: $color-orange;
+    color: $color-white;
+    @include respond(phone-618 ) {
+        display: none;
+    }
+}
+.rates__btn {
+    padding: 14px 121px;
+    font-family: 'Rostelecom Basis Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+    background-color: $color-orange;
+    border-radius: 100px;
+    @include respond(tab-767) {              
+        width: 80%;
+        padding: 11px 0px;
+        display: flex;
+        justify-content: center;
+        
+    }
+}
+.rates__btn-mobile {
+    display: none;
+    padding: 14px 128px;
+    font-family: 'Rostelecom Basis Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-white;
+    background-color: $color-orange;
+    border-radius: 100px;
+    max-width: 320px;
+    @include respond(tab-767) {              
+        display: block;
+    }
+    @include respond(phone-350) {
+        padding: 14px 114px;
+    }
+}
+.btn-main-mobile {
+    display: none;
+    @include respond(phone-min) {
+        background: #EAEAEA;
+        border-radius: 100px;
+        display: flex;
+        max-width: 351px;
+        margin-top: 23px;
+        img {
+            width: 9px;
+            height: 16px;
+            margin-top: 29px;
+            margin-right: 12px;
+        }
+    }
+    @include respond(phone-350) {
+        max-width: 317px;
+        img {
+            margin-right: 5px;
+        }
+    }
+}
+.btn-mobile-main {
+    @include respond(phone-min) {              
+        display: block;
+        background: $color-orange;
+        border-radius: 100px;
+        color: $color-white;
+        font-family: 'Rostelecom Basis Regular';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 15px 34px;
+        margin: 9px 98px 8px 10px;
+        @include respond(phone-350) {
+            margin: 9px 75px 8px 10px;
+        }
+    }
+}
+.btn-forms {
+    border: none;
+    background-color: $color-orange;
+    border-radius: 4px;
+    padding: 14px 28px;
+    color: $color-white;
+    margin-top: 46px;
+    @include respond(tab-1180) {
+        padding: 14px 121px;
+        border-radius: 100px;
+        margin-top: 28px;
+    }
+}

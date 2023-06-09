@@ -1,0 +1,57 @@
+.services {
+    background-color: $color-white;
+    padding: 120px 0 115px 0;
+    @include respond(tab-1368) {
+        padding: 0;
+    }
+    &__wrapper {
+        background-color: $color-light-grey;
+        padding: 80px 75px 80px 91px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 88px;
+        @include respond(tab-1368) {
+            flex-wrap: wrap;
+            flex-direction: column-reverse;
+            justify-content: center;
+            padding: 0 0 0 0;
+            background-color: $color-white;
+            padding: 40px 0;
+        }
+    }
+    &__img {  
+        img {
+            border-radius: 20px;
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            max-width: 520px;
+            @include respond(tab-767) {
+                max-width: 320px;
+            }
+            @include respond(phone-350) {
+                max-width: 290px;
+            }
+        }
+    }
+    &__item {
+        @include respond(tab-1368) {
+            margin-top: 32px;
+        }
+        &-inner {
+            display: flex;
+            &_img {
+                background-color: $color-orange;
+                border-radius: 50%;
+                min-width: 20px;
+                height: 20px;
+                position: relative;
+                margin-right: 10px;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

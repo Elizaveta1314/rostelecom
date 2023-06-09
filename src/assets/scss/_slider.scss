@@ -1,0 +1,97 @@
+.slider {
+    background-color: $color-white;
+    &__wrapper {
+        height: 100%;
+        position: relative;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 103px;
+        padding-top: 56px;
+        @include respond(tab-1180) {
+            column-gap: 20px;
+        }
+        @include respond(tab-1024) {
+            flex-wrap: wrap;
+            padding-top: 32px;
+            padding-bottom: 128px;
+        }
+        &-shell {
+            width: 497px;
+            @include respond(big-1458) {
+                width: 100%;
+            }
+        }
+        &-block {
+            @include respond(tab-1024) {
+                padding-top: 20px;
+            }
+            @include respond(tab-767) {
+                display: none;
+            }
+        }
+        &-img {
+            @include respond(tab-767) {
+                width: 320px;
+                height: 319px;
+            }
+            @include respond(phone-350) {
+                max-width: 100%;
+            }
+        }
+    }
+    &__text {
+        &-mb {
+            margin: 38px 0 20px 0;
+            @include respond(tab-1024) {
+                margin: 29px 0 16px 0;
+            }
+        }
+    }
+}
+.slick-list {
+    overflow: hidden;
+} 
+.slick-track {
+    display: flex;
+}
+.slide-arrow .slick-arrow.slick-prev { 
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('../img/arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $color-white;
+    bottom: 54px;
+    left: 704px;
+    @include respond(tab-1024) {
+        left: 72px;
+        bottom: 48px;
+    }
+}
+
+.slide-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url('../img/arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: 54px;
+    left: 632px;
+    font-size: 0;
+    background-color: $color-white;
+    @include respond(tab-1024) {
+        left: 0px;
+        bottom: 48px;
+    }
+}

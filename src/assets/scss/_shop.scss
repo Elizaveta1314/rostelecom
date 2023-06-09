@@ -1,0 +1,324 @@
+.shop {
+    background-color: $color-white;
+    padding: 98px 0 157px 0;
+    @include respond(tab-1024) {
+        padding: 38px 0 100px 0;
+    }
+    @include respond(tab-993) {
+        overflow: scroll;
+    }
+    @include respond(phone-507) {
+        padding: 38px 0 34px 0;
+    }
+    &__wrapper {
+        display: flex;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        @include respond(tab-993) {
+            flex-wrap:nowrap;
+        }
+        @include respond(phone-507) {
+            display: none;
+        }
+        &-block {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            &-text {
+                font-family: 'Rostelecom Basis Medium';
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 28px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 32px 0 32px 0;
+                width: 467px;
+                border: 2px solid $color-grey;
+                border-radius: 8px;
+                margin: 40px 0 24px 0;
+                @include respond(big-1458) {
+                    width: 420px;
+                }
+                @include respond(tab-1368) {
+                    width: 380px;
+                }
+                @include respond(tab-1240) {
+                    width: 360px;
+                }
+                @include respond(tab-1180) {
+                    width: 300px;
+                }
+                @include respond(phone-507) {
+                    margin: 20px 0 14px 0;
+                    padding: 18px 0 19px 0px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                }
+            }
+        }
+        &-inner {
+            img {
+               border-radius: 8px; 
+            @include respond(big-1458) {
+                width: 420px;
+            }
+            @include respond(tab-1368) {
+                width: 380px;
+            }
+            @include respond(tab-1240) {
+                width: 360px;
+            }
+            @include respond(tab-1180) {
+                width: 300px;
+            }
+
+            }
+        }
+    }
+}
+.slider-mobile {
+    &__item {
+        img {
+            @include respond(phone-507) {
+               width: 100%; 
+               border-radius: 8px;
+            } 
+        }
+    }
+}
+.integrations, .applications, .office {
+    width: 467px;
+    @include respond(big-1458) {
+        width: 420px;
+    }
+    @include respond(tab-1368) {
+        width: 380px;
+    }
+    @include respond(tab-1240) {
+        width: 360px;
+    }
+    @include respond(tab-1180) {
+        width: 300px;
+    }
+}
+.container-arrow, .container-arrow-1, .container-arrow-2 {
+    position: relative;
+}
+//integrations
+.integrations-arrow .slick-arrow.slick-prev { 
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('../img/arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $color-white;
+    bottom: -76px;
+    left: 244px;
+    @include respond(big-1458) {
+        left: 215px;
+    }
+    @include respond(tab-1368) {
+        left: 195px;
+    }
+    @include respond(tab-1240) {
+        left: 175px;
+    }
+    @include respond(tab-1180) {
+        left: 160px;
+    }
+}
+
+
+.integrations-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url('../img/arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: $color-white;
+    @include respond(big-1458) {
+        left: 143px;
+    }
+    @include respond(tab-1368) {
+        left: 123px;
+    }
+    @include respond(tab-1240) {
+        left: 103px;
+    }
+    @include respond(tab-1180) {
+        left: 88px;
+    }
+}
+//applications
+.applications-arrow .slick-arrow.slick-prev { 
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('../img/arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $color-white;
+    bottom: -76px;
+    left: 244px;
+    @include respond(big-1458) {
+        left: 215px;
+    }
+    @include respond(tab-1368) {
+        left: 195px;
+    }
+    @include respond(tab-1240) {
+        left: 175px;
+    }
+    @include respond(tab-1180) {
+        left: 160px;
+    }
+}
+
+.applications-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url('../img/arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: $color-white;
+    @include respond(big-1458) {
+        left: 143px;
+    }
+    @include respond(tab-1368) {
+        left: 123px;
+    }
+    @include respond(tab-1240) {
+        left: 103px;
+    }
+    @include respond(tab-1180) {
+        left: 88px;
+    }
+}
+.office-arrow .slick-arrow.slick-prev { 
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('../img/arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $color-white;
+    bottom: -76px;
+    left: 244px;
+    @include respond(big-1458) {
+        left: 215px;
+    }
+    @include respond(tab-1368) {
+        left: 195px;
+    }
+    @include respond(tab-1240) {
+        left: 175px;
+    }
+    @include respond(tab-1180) {
+        left: 160px;
+    }
+}
+
+.office-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url('../img/arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: -76px;
+    left: 172px;
+    font-size: 0;
+    background-color: $color-white;
+    @include respond(big-1458) {
+        left: 143px;
+    }
+    @include respond(tab-1368) {
+        left: 123px;
+    }
+    @include respond(tab-1240) {
+        left: 103px;
+    }
+    @include respond(tab-1180) {
+        left: 88px;
+    }
+
+}
+.shop-mobile__wrapper {
+    position: relative;
+    display: none;
+    @include respond(phone-507) {
+        display: block;
+    }
+
+}
+.shop-arrow .slick-arrow.slick-prev { 
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border-radius: 50%;
+    font-size: 0;
+    background-image: url('../img/arrow-r.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: $color-white;
+    bottom: 65px;
+    right: -17px;
+    @include respond(phone-350) {
+        bottom: 50px;
+    }
+}
+
+
+.shop-arrow .slick-arrow.slick-next {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0px 4px 16px rgba(16, 24, 40, 0.15);
+    border: none;
+    background-image: url('../img/arrow-l.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    bottom: 65px;
+    left: -17px;
+    font-size: 0;
+    background-color: $color-white;
+    @include respond(phone-350) {
+        bottom: 50px;
+    }
+}
